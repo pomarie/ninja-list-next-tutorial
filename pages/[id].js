@@ -20,6 +20,7 @@ export const getStaticProps = async (context) => {
 
     const res = await fetch('https://jsonplaceholder.typicode.com/users/'+id);
     const data = await res.json();
+    console.log('test')
 
     return {
         props: { ninja: data }
